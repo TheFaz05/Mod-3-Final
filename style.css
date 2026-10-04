@@ -13,16 +13,32 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 80px;
+    display: flex;
+}
+
 .T-logo {
-max-width: 15%;
+max-width: 10%;
 max-height: auto;
 }
 
 .logo-container {
 display: flex;
 align-items: center;
-font-weight: 700;
-color: #243e63
+font-weight: 900;
+}
+
+.logo-text {
+    padding: 8px 12px;
 }
 
 .row {
