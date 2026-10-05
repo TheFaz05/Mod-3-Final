@@ -18,17 +18,35 @@ a {
 }
 ul {
     display: flex;
+    transform: translateY(15px);
 }
 
 li {
     list-style-type: none;
-    padding-left: 80px;
+    padding-left: 60px;
     display: flex;
+    font-weight: 600;
+    transform: translateX(253px);
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #6415ff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: darkviolet;
 }
 
 .T-logo {
-max-width: 10%;
-max-height: auto;
+  max-width: 13%;
+  max-height: auto;
+  transform: translateX(35px);
 }
 
 .logo-container {
@@ -38,7 +56,9 @@ font-weight: 900;
 }
 
 .logo-text {
+    font-size: 28px;
     padding: 8px 12px;
+     transform: translateX(35px);
 }
 
 .row {
