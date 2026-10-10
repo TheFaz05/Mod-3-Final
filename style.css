@@ -208,12 +208,17 @@ header .row {
     width: 40%;
 }
 
+.header__description h1 {
+   font-size: 48px;
+   text-align: left; 
+}
+
 .header__description--para {
     margin: 32px 0;
 }
 
 .header__img--wrapper {
-    width: calc(100% -40%);
+    width: 60%;
 }
 
 .header__email {
