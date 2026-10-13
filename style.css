@@ -541,22 +541,24 @@ QUALITY WORK ↓
     margin: 0 56px;
     z-index: 2;
     display: flex;
+    width: 100%;
 }
 
-.quality__description, .quality__img--wrapper {
-    width: 50%;
+.quality__grid {
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 70px;
+    height: 70px;
+    color: #243e63;
+    fill: rgba(100, 21, 255);
+    z-index: -1;
 }
 
 .quality__description {
     max-width: 576px;
     margin-right: 64px;
 }
-
-img {
-    width: 50%;
-}
-
-
 
 
 /* 
