@@ -26,7 +26,8 @@ a {
 }
 
 ul {
-    display: none;
+    display: flex;
+    align-items: center;
 }
 
 p {
@@ -70,11 +71,11 @@ font-weight: 900;
 }
 
 .burger-menu {
-    display: none;
+    display: block;
 }
 
 .menu-button {
-    display: block;
+    display: none;
 }
 
 .row {
@@ -1620,6 +1621,8 @@ MOBILE RESPONSIVENESS ↓
     
     #pricing .row {
         margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
     }
     
     .burger-menu ul {
@@ -1652,6 +1655,12 @@ MOBILE RESPONSIVENESS ↓
 
     .feature {
         width: 90%;
+    }
+
+    #start.container {
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
