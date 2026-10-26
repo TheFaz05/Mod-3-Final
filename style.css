@@ -1604,11 +1604,6 @@ MOBILE RESPONSIVENESS ↓
     .footer {
         padding: 80px 32px;
     }
-
-    .plans {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media(max-width: 768px) {
@@ -1655,6 +1650,9 @@ MOBILE RESPONSIVENESS ↓
         text-align: center;
     }
 
+    .feature {
+        width: 90%;
+    }
 }
 
 @media(max-width: 640px) {
