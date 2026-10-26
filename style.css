@@ -1647,7 +1647,7 @@ MOBILE RESPONSIVENESS ↓
        width: 90%;
     }
 
-    .feature.row {
+    .feature__row {
         flex-direction: column;
         align-items: center;
         text-align: center;
