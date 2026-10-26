@@ -26,7 +26,7 @@ a {
 }
 
 ul {
-    display: flex;
+    display: none;
 }
 
 p {
@@ -69,6 +69,13 @@ font-weight: 900;
     padding: 8px 12px;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+}
 
 .row {
     width: 100%;
@@ -120,7 +127,6 @@ nav {
     padding-bottom: 4px;
 }
 
-
 .btn__menu {
     display: none;
     background: transparent;
@@ -131,7 +137,6 @@ nav {
 .btn__menu--svg:hover {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
-
 
 
 .modal {
@@ -1568,8 +1573,11 @@ MOBILE RESPONSIVENESS ↓
 
 
 @media(max-width: 1280px) {
-    header .row {
+    .header .row {
         align-items: flex-end;
+    }
+    .features {
+        width: 90%;
     }
 }
 
@@ -1578,7 +1586,7 @@ MOBILE RESPONSIVENESS ↓
         display: block;
     }
 
-    header .row {
+    .header .row {
         flex-direction: column;
         align-items: center;
     }
@@ -1593,8 +1601,13 @@ MOBILE RESPONSIVENESS ↓
         text-align: center;
     }
 
-    footer {
+    .footer {
         padding: 80px 32px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1603,18 +1616,45 @@ MOBILE RESPONSIVENESS ↓
     #values .row {
         flex-direction: column-reverse;
     }
+    
     #steps .row,
     #testimonials .row {
         flex-direction: column;
         align-items: center;
     }
+    
     #pricing .row {
         margin-top: 40px;
     }
-
-    burger-menu ul {
+    
+    .burger-menu ul {
     display: none;
     }
+    
+    .burger-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .burger-menu.active {
+        display: block;
+    }
+    
+    .features {
+       width: 90%;
+    }
+
+    .feature.row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 @media(max-width: 640px) {
@@ -1625,7 +1665,7 @@ MOBILE RESPONSIVENESS ↓
         margin: 8px 0;
         padding-bottom: 4px;
     }
-    main {
+    .main {
         margin-bottom: 80px;
     }
 }
